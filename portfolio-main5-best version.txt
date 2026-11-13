@@ -1,0 +1,1422 @@
+Repository: portfolio
+Branch: main5
+
+--- FILE STRUCTURE ---
+FILE - index.html
+FILE - script.js
+FILE - style.css
+
+
+--- FILE CONTENTS ---
+
+================================================
+FILE: index.html
+================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinu Vanapalli | AWS DevOps & Site Reliability Engineer</title>
+    
+    <!-- SEO & Social Media Metadata -->
+    <meta name="description" content="Srinu Vanapalli - AWS DevOps and Site Reliability Engineer with 5 years experience in Kubernetes, EKS, Terraform, Jenkins, Vault, and Observability.">
+    <meta name="keywords" content="Srinu Vanapalli, DevOps Engineer, Site Reliability Engineer, SRE, AWS, Kubernetes, Terraform, Jenkins, HashiCorp Vault">
+    <meta property="og:title" content="Srinu Vanapalli | AWS DevOps & SRE Engineer">
+    <meta property="og:description" content="AWS DevOps & SRE with 5 years experience in EKS, Terraform, CI/CD, and Observability.">
+    <meta property="og:image" content="bg.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕮</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <h1 class="logo">Srinu<span>.DevOps</span></h1>
+            
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#metrics">Impact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1>Srinu Vanapalli</h1>
+            <h2><span class="typed-text">&nbsp;</span><span class="cursor">&nbsp;</span></h2>
+            <p class="hero-desc">AWS DevOps & Site Reliability Engineer | 5 Years Cloud & Infrastructure Experience</p>
+
+            <!-- DevOps Terminal Mockup (Header title acts as hidden secret trigger) -->
+            <div class="terminal-container">
+                <div class="terminal-header" onclick="openSecretConsole()" style="cursor: pointer;" title="Click to access restricted console">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">srinu@prod-node:~ <i class="fa-solid fa-lock" style="font-size: 0.75rem; margin-left: 5px; opacity: 0.6;"></i></span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">$</span> kubectl get cluster-status --namespace prod</p>
+                    <p class="terminal-output"><span class="success">STATUS: HEALTHY</span> | Nodes: 12 Sites | Uptime: 99.9% | Sec Vault: Injected</p>
+                </div>
+            </div>
+            
+            <div class="resume-buttons">
+                <a href="Srinu_Resume.pdf" target="_blank" class="btn btn-secondary">
+                    <i class="fa-solid fa-eye"></i> View Resume
+                </a>
+                
+                <a href="Srinu_Resume.pdf" download="Srinu_Vanapalli_Resume.pdf" class="btn btn-secondary">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+                
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fa-solid fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Impact Metrics Section -->
+    <section id="metrics" class="container">
+        <div class="metrics-grid">
+            <div class="metric-card glass-card">
+                <h3 class="counter" data-target="98">0</h3><span class="metric-unit">%</span>
+                <p>Monitoring Effort Reduction</p>
+            </div>
+            <div class="metric-card glass-card">
+                <h3>35m</h3>
+                <p>Deploy Time (Down from 2.5h)</p>
+            </div>
+            <div class="metric-card glass-card">
+                <h3 class="counter" data-target="95">0</h3><span class="metric-unit">%</span>
+                <p>Server Alerting Coverage</p>
+            </div>
+            <div class="metric-card glass-card">
+                <h3 class="counter" data-target="12">0</h3><span class="metric-unit"> Sites</span>
+                <p>Live Railway Prod Deploys</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container bg-dark">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="about-text">
+            DevOps Engineer with 5 years of experience designing, automating, and managing AWS cloud infrastructure. Skilled in AWS, Jenkins, Git, Docker, Kubernetes/EKS, Terraform, Ansible, CI/CD, monitoring, security, troubleshooting, and production support. Experienced in improving deployment efficiency, infrastructure reliability, and operational automation.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container">
+        <h2 class="section-title">Professional <span>Experience</span></h2>
+        <div class="card glass-card">
+            <h3>AWS DevOps Engineer / Site Reliability Engineer</h3>
+            <h4 class="highlight-text">Tata Consultancy Services (TCS) | Hyderabad, India | Dec 2021 – Aug 2026</h4>
+            <ul>
+                <li>Managed AWS infrastructure and production environments using EC2, EKS, ECR, VPC, S3, RDS, IAM, KMS, and CloudWatch.</li>
+                <li>Built and optimized Jenkins CI/CD pipelines with Git-based workflows to automate application deployment and release processes.</li>
+                <li>Automated infrastructure provisioning and environment management using Terraform and configuration automation using Ansible.</li>
+                <li>Deployed and supported containerized applications using Docker, Kubernetes/EKS, Helm, NGINX Ingress, and Istio.</li>
+                <li>Implemented HashiCorp Vault secret injection for Kubernetes workloads, eliminating hardcoded sensitive credentials.</li>
+                <li>Developed automated server health, availability, offline detection, and expiration-monitoring jobs with stakeholder notifications, reducing manual effort by 98% (250+ minutes to 5 minutes).</li>
+                <li>Optimized parallelized multi-node deployment pipelines with fallback mechanisms, reducing deployment time from 2.5 hours to under 35 minutes and enabling a 5x increase in daily deployments.</li>
+                <li>Improved production monitoring and alerting coverage from 60% to 95% using Grafana on AWS EC2.</li>
+                <li>Built a reusable Jenkins dynamic dependency resolver for multi-environment builds, supporting 20+ release requests through a single job.</li>
+                <li>Automated multi-tier deployment tracking through on-demand release notes and release summarization, reducing manual Release Board activities.</li>
+                <li>Executed 10+ RHEL 7 to RHEL 8 production server upgrades with near-zero traffic disruption using detailed migration procedures.</li>
+                <li>Supported production incidents, troubleshooting, root-cause analysis, release management, and cross-functional coordination across approximately 6 teams.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container bg-dark">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>AWS Cloud Infrastructure</h3>
+                <p>EC2, EKS, ECR, VPC, S3, EBS, EFS, RDS, IAM, KMS, CloudWatch, CloudFront, CloudTrail</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-code-branch"></i>
+                <h3>DevOps & CI/CD</h3>
+                <p>Jenkins, CI/CD, Git, Terraform, Ansible, Argo CD, Helm, GitOps</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-docker"></i>
+                <h3>Containers & Orchestration</h3>
+                <p>Kubernetes, Amazon EKS, Docker, ECR, NGINX Ingress, Istio</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Programming & Databases</h3>
+                <p>Python, Shell Scripting, Linux, RHEL, MySQL, NoSQL, SQL Server, PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Monitoring & Security</h3>
+                <p>Grafana, Prometheus, CloudWatch, New Relic, HashiCorp Vault, IAM, RBAC, SonarQube, Trivy</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-gears"></i>
+                <h3>Practices & Operations</h3>
+                <p>Production Support, Incident Management, RCA, Release Management, SOPs, HA/DR, Troubleshooting, Cost Optimization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Key <span>Projects</span></h2>
+        <div class="projects-grid">
+            <!-- Flagship Resume Project -->
+            <div class="project-card glass-card flagship-card">
+                <h3>Railway Wheel Defect Detection Platform</h3>
+                <div class="tech-stack"><span>AWS</span><span>Kubernetes</span><span>Grafana</span><span>Python</span><span>EQMS</span></div>
+                <p>Supported a production automated wheel-defect detection platform deployed across 12 railway sites. Contributed to deployment, infrastructure, monitoring, troubleshooting, release management, and production support. Processed reference and live train images to identify potential wheel defects and generated alarms for onsite coordination.</p>
+                <div class="project-links">
+                    <span class="badge-prod"><i class="fa-solid fa-server"></i> Active Production Deployment</span>
+                </div>
+            </div>
+            
+            <div class="project-card glass-card">
+                <h3>Microservices Migration</h3>
+                <div class="tech-stack"><span>Terraform</span><span>Jenkins</span><span>EKS</span><span>Docker</span></div>
+                <p>Architected an automated Jenkins pipeline for a 5-tier microservices app. Migrated workloads to EKS achieving auto-scaling and zero-downtime.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Srinuas/library_port.git" class="demo-link" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://library-app-ftg9.onrender.com" class="demo-link" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <h3>Flight App Infrastructure</h3>
+                <div class="tech-stack"><span>AWS EC2</span><span>Ansible</span><span>Actions</span><span>Prometheus</span></div>
+                <p>Automated infrastructure provisioning and CI/CD pipelines. Implemented full stack observability with Prometheus and Grafana dashboards.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Srinuas/flight_port.git" class="demo-link" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://flight-vurg.onrender.com" class="demo-link" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <h3>E-Commerce GitOps</h3>
+                <div class="tech-stack"><span>Azure DevOps</span><span>AKS</span><span>Argo CD</span><span>Helm</span></div>
+                <p>Designed a GitOps continuous delivery pipeline on Kubernetes ensuring declarative state synchronization and auditability.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Srinuas/ecom_port.git" class="demo-link" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://e-com-icnk.onrender.com" class="demo-link" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <h3>Metro App Service Mesh</h3>
+                <div class="tech-stack"><span>AWS EKS</span><span>Istio</span><span>GitLab CI</span></div>
+                <p>Implemented secure microservices architecture using Istio Service Mesh on EKS, managing mTLS traffic encryption and routing.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Srinuas/metro_port.git" class="demo-link" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://metroapp.onrender.com" class="demo-link" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <h3>Food Delivery DevSecOps</h3>
+                <div class="tech-stack"><span>Jenkins</span><span>SonarQube</span><span>Trivy</span><span>Vault</span></div>
+                <p>Integrated shift-left security into CI/CD. Automated image vulnerability scanning with Trivy and centralized code analysis.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Srinuas/food_port.git" class="demo-link" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://food-delivery-app-aknc.onrender.com" class="demo-link" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container bg-dark">
+        <h2 class="section-title">Education 🎓</h2>
+        <div class="card glass-card">
+            <h3>🎓 Bachelor of Technology (B.Tech)</h3>
+            <ul style="margin-top: 15px; list-style: none; padding-left: 0;">
+                <li style="margin-bottom: 8px;">🏫 <strong>College:</strong> BVC College of Engineering</li>
+                <li style="margin-bottom: 8px;">🏛️ <strong>University:</strong> Jawaharlal Nehru Technological University, Kakinada (JNTUK)</li>
+                <li style="margin-bottom: 8px;">⚙️ <strong>Stream:</strong> Mechanical Engineering</li>
+                <li style="margin-bottom: 8px;">📊 <strong>CGPA:</strong> 7.52 / 10.0</li>
+                <li style="margin-bottom: 8px;">📅 <strong>Duration:</strong> July 2016 – Sep 2020</li>
+                <li style="margin-bottom: 8px;">📍 <strong>Location:</strong> Rajahmundry, Andhra Pradesh, India</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container">
+        <h2 class="section-title">Multi-Cloud <span>Certifications</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card cert-card">
+                <i class="fa-brands fa-microsoft"></i>
+                <h3>Azure Fundamentals</h3>
+                <p class="highlight-text">(AZ-900)</p>
+            </div>
+            <div class="skill-card cert-card">
+                <i class="fa-brands fa-microsoft"></i>
+                <h3>Power Platform</h3>
+                <p class="highlight-text">(PL-900)</p>
+            </div>
+            <div class="skill-card cert-card">
+                <i class="fa-brands fa-microsoft"></i>
+                <h3>Azure Developer</h3>
+                <p class="highlight-text">(AZ-204)</p>
+            </div>
+            <div class="skill-card cert-card">
+                <i class="fa-brands fa-microsoft"></i>
+                <h3>Azure Security Engineer</h3>
+                <p class="highlight-text">(AZ-500)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="container bg-dark">
+        <h2 class="section-title">My <span>Blogs</span></h2>
+        <div class="card glass-card text-center" style="max-width: 600px; margin: 0 auto;">
+            <i class="fa-solid fa-pen-nib" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+            <h3>Tech Insights & Learnings</h3>
+            <p style="margin-bottom: 20px;">I share operational learnings on Cloud Architecture, DevOps best practices, Kubernetes, and Site Reliability Engineering.</p>
+            
+            <a href="https://medium.com/@srinuas" target="_blank" class="btn btn-secondary" style="display: inline-flex; justify-content: center;" aria-label="Read Medium Blogs">
+                <i class="fa-solid fa-book-open"></i> Read My Blogs
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-info glass-card">
+            <p><i class="fa-solid fa-envelope"></i> srinu.vanapalli333@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91-6305191306</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/srinu-vanapalli/" target="_blank" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://medium.com/@srinuas" target="_blank" aria-label="Medium Blog Profile"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/Srinuas?tab=repositories" target="_blank" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/mr._srinu_vanapalli?stkn=cjk2cDM2dzZ3c2E=" target="_blank" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Srinu Vanapalli. Crafted with passion.</p>
+    </footer>
+
+    <!-- Secret DevOps Terminal Console Modal -->
+    <div id="secretConsoleModal" class="console-overlay" style="display: none;">
+        <div class="console-card">
+            <div class="console-header">
+                <span class="dot red" onclick="closeSecretConsole()" style="cursor: pointer;"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="console-header-title">srinu@secure-vault:~</span>
+                <span class="console-close" onclick="closeSecretConsole()">&times;</span>
+            </div>
+
+            <!-- PIN Authentication View -->
+            <div id="pinAuthSection" class="console-body">
+                <p class="console-log"><span class="prompt">$</span> vault authenticate --security-pin</p>
+                <p class="console-log warning">AUTHENTICATION REQUIRED: Enter 4-digit security PIN to unlock repository files console.</p>
+                <div class="console-input-row">
+                    <span class="prompt">PIN:</span>
+                    <input type="password" id="secretPinInput" maxlength="4" autofocus autocomplete="off" placeholder="****" onkeyup="if(event.key==='Enter') verifySecretPin()">
+                    <button onclick="verifySecretPin()" class="console-btn">EXECUTE</button>
+                </div>
+                <p id="secretPinError" class="console-log error" style="display: none;">[ERROR] Invalid Security PIN. Access Denied.</p>
+            </div>
+
+            <!-- Restricted Files Console Output View -->
+            <div id="filesConsoleSection" class="console-body" style="display: none;">
+                <div id="vaultToastContainer"></div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+                    <p class="console-log" style="margin: 0;"><span class="prompt">$</span> vault fs --list-all</p>
+                    <div>
+                        <label for="vaultFileUpload" class="console-btn" style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.8rem; padding: 6px 14px;">
+                            <i class="fa-solid fa-cloud-arrow-up"></i> Upload File
+                        </label>
+                        <input type="file" id="vaultFileUpload" style="display: none;" onchange="handleFileUpload(event)">
+                    </div>
+                </div>
+                <p class="console-log"><span class="prompt">$</span> git ls-files --stage origin/main</p>
+                <p class="console-log success">[SUCCESS] Vault Unlocked. Available Files Directory (GitHub Repository):</p>
+                
+                <div class="file-console-list" id="githubFileList">
+                    <!-- GitHub Repository Files populated dynamically -->
+                </div>
+
+                <div class="console-footer-actions">
+                    <a href="https://github.com/Srinuas?tab=repositories" target="_blank" class="console-btn-link"><i class="fa-brands fa-github"></i> Open GitHub Repository</a>
+                    <button onclick="closeSecretConsole()" class="console-btn">EXIT CONSOLE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- In-Page File Preview Modal (RESPONSIVE FIX APPLIED HERE) -->
+    <div id="filePreviewModal" class="console-overlay" style="display: none; z-index: 3000;">
+        <div class="console-card" style="max-width: 900px; width: 95%;">
+            <div class="console-header" style="justify-content: space-between; flex-wrap: nowrap; overflow: hidden;">
+                
+                <!-- Left Side: Dots & Truncated Filename -->
+                <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; padding-right: 10px;">
+                    <span class="dot red" onclick="closeFilePreview()" style="cursor: pointer;"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="console-header-title" id="previewFileName" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-left: 5px;">file.ext</span>
+                </div>
+                
+                <!-- Right Side: Action Buttons -->
+                <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+                    <a href="#" id="previewDownloadBtn" target="_blank" download style="color: #27c93f; text-decoration: none; display: flex; align-items: center; gap: 6px; font-size: 0.9rem; font-family: 'Outfit', sans-serif;">
+                        <i class="fa-solid fa-download"></i> <span style="display: inline-block;">Download</span>
+                    </a>
+                    <span class="console-close" onclick="closeFilePreview()" style="position: static; font-size: 1.6rem; margin-left: 5px; cursor: pointer; color: #aaa;">&times;</span>
+                </div>
+                
+            </div>
+            <div id="filePreviewContent" class="console-body" style="text-align: center; padding: 20px; overflow-y: auto; max-height: 75vh;">
+                <!-- Content injected automatically by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" id="scrollUp" class="scroll-up" aria-label="Scroll to top of page"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+
+    <!-- GitHub Token Authentication Modal for Direct Commits -->
+    <div id="githubTokenModal" class="console-overlay" style="display: none; z-index: 3500;">
+        <div class="console-card glass-modal" style="max-width: 480px;">
+            <div class="console-header">
+                <span class="dot red" onclick="closeTokenModal()" style="cursor: pointer;"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="console-header-title">git config --global github.token</span>
+                <span class="console-close" onclick="closeTokenModal()">&times;</span>
+            </div>
+            <div class="console-body">
+                <p class="console-log warning"><i class="fa-solid fa-key"></i> Enter your GitHub Personal Access Token (Classic/Fine-grained) with <code>repo</code> scope to commit files directly to your public <b>files</b> repository:</p>
+                <div class="console-input-row" style="margin-top: 15px;">
+                    <input type="password" id="githubTokenInput" placeholder="ghp_xxxxxxxxxxxx" style="width: 100%; letter-spacing: 1px; font-size: 0.9rem;" autocomplete="off">
+                </div>
+                <div class="console-footer-actions" style="margin-top: 20px;">
+                    <button onclick="saveGitHubTokenAndUpload()" class="console-btn">SAVE & COMMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+================================================
+FILE: script.js
+================================================
+
+// script.js
+
+window.addEventListener("scroll", function() {
+    const navbar = document.getElementById("navbar");
+    const scrollUpBtn = document.getElementById("scrollUp");
+    
+    if (window.scrollY > 50) {
+        navbar.style.background = "rgba(10, 10, 15, 0.95)";
+        navbar.style.padding = "14px 0";
+        navbar.style.boxShadow = "0 4px 30px rgba(0,0,0,0.6)";
+        navbar.style.backdropFilter = "blur(10px)";
+    } else {
+        navbar.style.background = "transparent";
+        navbar.style.padding = "20px 0";
+        navbar.style.boxShadow = "none";
+        navbar.style.backdropFilter = "none";
+    }
+
+    if (window.scrollY > 300) {
+        scrollUpBtn.classList.add("show");
+    } else {
+        scrollUpBtn.classList.remove("show");
+    }
+});
+
+const typedTextSpan = document.querySelector(".typed-text");
+const textArray = ["AWS DevOps Engineer", "Site Reliability Engineer", "Cloud Infrastructure Engineer", "Platform Engineer"];
+let textArrayIndex = 0, charIndex = 0;
+
+function type() {
+    if (typedTextSpan && charIndex < textArray[textArrayIndex].length) {
+        if (charIndex === 0 && typedTextSpan.innerHTML === "&nbsp;") typedTextSpan.textContent = "";
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 80);
+    } else if (typedTextSpan) {
+        setTimeout(erase, 3000);
+    }
+}
+
+function erase() {
+    if (typedTextSpan && charIndex > 0) {
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 40);
+    } else if (typedTextSpan) {
+        typedTextSpan.innerHTML = "&nbsp;";
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, 380);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    if (typedTextSpan && textArray.length) setTimeout(type, 800);
+});
+
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+const menuIcon = mobileMenu ? mobileMenu.querySelector("i") : null;
+
+if (mobileMenu && navLinks) {
+    mobileMenu.addEventListener("click", (e) => {
+        e.stopPropagation();
+        navLinks.classList.toggle("active");
+        menuIcon.classList.toggle("fa-bars");
+        menuIcon.classList.toggle("fa-xmark");
+    });
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            if (menuIcon) {
+                menuIcon.classList.add("fa-bars");
+                menuIcon.classList.remove("fa-xmark");
+            }
+        });
+    });
+}
+
+function openSecretConsole() {
+    const modal = document.getElementById('secretConsoleModal');
+    const pinAuth = document.getElementById('pinAuthSection');
+    const filesConsole = document.getElementById('filesConsoleSection');
+    const pinInput = document.getElementById('secretPinInput');
+    const pinError = document.getElementById('secretPinError');
+
+    if (!modal) return;
+    modal.style.display = 'flex';
+    if (pinAuth) pinAuth.style.display = 'block';
+    if (filesConsole) filesConsole.style.display = 'none';
+    if (pinError) pinError.style.display = 'none';
+    if (pinInput) {
+        pinInput.value = '';
+        setTimeout(() => pinInput.focus(), 100);
+    }
+}
+
+function closeSecretConsole() {
+    const modal = document.getElementById('secretConsoleModal');
+    if (modal) modal.style.display = 'none';
+}
+
+function checkAutoVerifyPin(event) {
+    const pinInput = document.getElementById('secretPinInput').value;
+    if (pinInput === '0000' || pinInput.length === 4) {
+        verifySecretPin();
+    }
+}
+
+function verifySecretPin() {
+    const pinInput = document.getElementById('secretPinInput').value;
+    const pinError = document.getElementById('secretPinError');
+    const pinWrapper = document.getElementById('pinInputWrapper');
+
+    if (pinInput === '0000') {
+        if (pinError) pinError.style.display = 'none';
+        document.getElementById('pinAuthSection').style.display = 'none';
+        document.getElementById('filesConsoleSection').style.display = 'block';
+        loadFilesRepositoryTree();
+    } else {
+        if (pinError) pinError.style.display = 'block';
+        if (pinWrapper) {
+            pinWrapper.classList.add('shake-error');
+            setTimeout(() => pinWrapper.classList.remove('shake-error'), 500);
+        }
+    }
+}
+
+let pendingFileToUpload = null;
+
+async function loadFilesRepositoryTree() {
+    const fileContainer = document.getElementById('githubFileList');
+    if (!fileContainer) return;
+    fileContainer.innerHTML = '<p class="console-log"><i class="fa-solid fa-spinner fa-spin"></i> Fetching files from public "files" repository...</p>';
+
+    const owner = 'Srinuas';
+    const repo = 'files';
+    const branch = 'main';
+
+    try {
+        const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`);
+        if (!response.ok) throw new Error('Repository tree fetch failed');
+        
+        const data = await response.json();
+        let files = [];
+        data.tree.forEach(item => {
+            if (item.type === 'blob') {
+                const fileName = item.path;
+                const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${fileName}`;
+                files.push({ name: fileName, url: rawUrl, sha: item.sha });
+            }
+        });
+
+        renderFileList(files);
+    } catch (error) {
+        console.error('Error fetching files repo:', error);
+        fileContainer.innerHTML = '<p class="console-log error"><i class="fa-solid fa-triangle-exclamation"></i> Error connecting to GitHub repository.</p>';
+    }
+}
+
+function renderFileList(files) {
+    const fileContainer = document.getElementById('githubFileList');
+    if (!fileContainer) return;
+    
+    if (files.length === 0) {
+        fileContainer.innerHTML = '<p class="console-log" style="text-align: center; color: #888;">Vault is currently empty. Upload files above.</p>';
+        return;
+    }
+
+    let html = '';
+    files.forEach((file) => {
+        const icon = getFileIcon(file.name);
+        html += `
+            <div class="file-item">
+                <span class="file-item-name" style="color: #e0e0e0;">
+                    <i class="fa-solid ${icon}"></i> ${file.name}
+                </span>
+                <div style="display: flex; gap: 15px; font-size: 0.85rem; font-family: 'Outfit', sans-serif; align-items: center;">
+                    <button onclick="openFilePreview('${file.name.replace(/'/g, "\'")}', '${file.url}')" style="background: none; border: none; color: var(--primary-color); cursor: pointer; display: flex; align-items: center; gap: 4px;" title="Preview">
+                        <i class="fa-solid fa-eye"></i> View
+                    </button>
+                    <a href="${file.url}" target="_blank" download="${file.name}" style="color: #27c93f; text-decoration: none; display: flex; align-items: center; gap: 4px;" title="Download">
+                        <i class="fa-solid fa-download"></i> Download
+                    </a>
+                    <button onclick="deleteRepoFile('${file.name.replace(/'/g, "\'")}', '${file.sha || ''}')" style="background: none; border: none; color: #ff5f56; cursor: pointer; display: flex; align-items: center; gap: 4px;" title="Delete">
+                        <i class="fa-solid fa-trash-can"></i> Delete
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+    fileContainer.innerHTML = html;
+}
+
+function handleFileUpload(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    pendingFileToUpload = file;
+    event.target.value = '';
+
+    const savedToken = localStorage.getItem('github_vault_token');
+    if (!savedToken) {
+        document.getElementById('githubTokenModal').style.display = 'flex';
+        document.getElementById('githubTokenInput').value = '';
+        setTimeout(() => document.getElementById('githubTokenInput').focus(), 100);
+    } else {
+        commitFileToGitHub(pendingFileToUpload, savedToken);
+    }
+}
+
+function closeTokenModal() {
+    const modal = document.getElementById('githubTokenModal');
+    if (modal) modal.style.display = 'none';
+    pendingFileToUpload = null;
+}
+
+function saveGitHubTokenAndUpload() {
+    const token = document.getElementById('githubTokenInput').value.trim();
+    if (!token) {
+        showGlassToast('[ERROR] Please enter a valid GitHub Token.');
+        return;
+    }
+    localStorage.setItem('github_vault_token', token);
+    closeTokenModal();
+
+    if (pendingFileToUpload) {
+        commitFileToGitHub(pendingFileToUpload, token);
+    }
+}
+
+async function commitFileToGitHub(file, token) {
+    const owner = 'Srinuas';
+    const repo = 'files';
+    const branch = 'main';
+    const path = file.name;
+
+    showGlassToast(`[GIT] Pushing '${file.name}' to GitHub repository...`);
+
+    const reader = new FileReader();
+    reader.onload = async function(e) {
+        const base64Content = e.target.result.split(',')[1];
+
+        try {
+            let fileSha = null;
+            const checkRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+                headers: { 'Authorization': `Bearer ${token}` }
+            });
+            if (checkRes.ok) {
+                const fileData = await checkRes.json();
+                fileSha = fileData.sha;
+            }
+
+            const bodyData = {
+                message: `feat: upload ${path} via secure vault console`,
+                content: base64Content,
+                branch: branch
+            };
+            if (fileSha) bodyData.sha = fileSha;
+
+            const putRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Accept': 'application/vnd.github+json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(bodyData)
+            });
+
+            if (!putRes.ok) {
+                const errJson = await putRes.json();
+                throw new Error(errJson.message || 'GitHub API commit failed');
+            }
+
+            showGlassToast(`[SUCCESS] File '${file.name}' committed directly to GitHub public repository!`);
+            pendingFileToUpload = null;
+            loadFilesRepositoryTree();
+
+        } catch (err) {
+            console.error('GitHub Commit Error:', err);
+            showGlassToast(`[ERROR] Commit failed: ${err.message}. Check token permissions.`);
+        }
+    };
+    reader.readAsDataURL(file);
+}
+
+async function deleteRepoFile(fileName, fileSha) {
+    const token = localStorage.getItem('github_vault_token');
+    if (!token) {
+        document.getElementById('githubTokenModal').style.display = 'flex';
+        showGlassToast('[AUTH REQUIRED] Enter GitHub Token to authorize deletion.');
+        return;
+    }
+
+    if (!confirm(`Permanently delete '${fileName}' from the public GitHub repository?`)) return;
+
+    const owner = 'Srinuas';
+    const repo = 'files';
+    const branch = 'main';
+
+    showGlassToast(`[GIT] Removing '${fileName}' from GitHub...`);
+
+    try {
+        let sha = fileSha;
+        if (!sha || sha === 'undefined') {
+            const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${fileName}`);
+            if (res.ok) {
+                const data = await res.json();
+                sha = data.sha;
+            }
+        }
+
+        const delRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${fileName}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Accept': 'application/vnd.github+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: `chore: delete ${fileName} via secure vault`,
+                sha: sha,
+                branch: branch
+            })
+        });
+
+        if (!delRes.ok) throw new Error('GitHub delete operation failed');
+
+        showGlassToast(`[SUCCESS] File '${fileName}' deleted from GitHub.`);
+        loadFilesRepositoryTree();
+
+    } catch (err) {
+        console.error('Delete Error:', err);
+        showGlassToast(`[ERROR] Failed to delete file: ${err.message}`);
+    }
+}
+
+function showGlassToast(message) {
+    const container = document.getElementById('vaultToastContainer');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = 'glass-toast-notification';
+    toast.innerHTML = `<i class="fa-solid fa-circle-info" style="color: var(--primary-color); margin-right: 8px;"></i> ${message}`;
+    
+    container.innerHTML = '';
+    container.appendChild(toast);
+
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 400);
+    }, 5000);
+}
+
+function getFileIcon(filename) {
+    const ext = filename.split('.').pop().toLowerCase();
+    switch(ext) {
+        case 'pdf': return 'fa-file-pdf';
+        case 'jpg': case 'jpeg': case 'png': case 'gif': case 'webp': return 'fa-file-image';
+        case 'html': case 'css': case 'js': case 'py': case 'json': case 'yml': case 'yaml': return 'fa-file-code';
+        case 'md': return 'fa-file-lines';
+        default: return 'fa-file';
+    }
+}
+
+async function openFilePreview(fileName, fileUrl) {
+    const modal = document.getElementById('filePreviewModal');
+    const contentDiv = document.getElementById('filePreviewContent');
+    const downloadBtn = document.getElementById('previewDownloadBtn');
+    const titleSpan = document.getElementById('previewFileName');
+
+    if (!modal) return;
+    titleSpan.innerText = fileName;
+    downloadBtn.href = fileUrl;
+    downloadBtn.setAttribute('download', fileName);
+    contentDiv.innerHTML = '<i class="fa-solid fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-color);"></i><p style="margin-top: 10px; color: #aaa;">Loading preview...</p>';
+    modal.style.display = 'flex';
+
+    const ext = fileName.split('.').pop().toLowerCase();
+
+    if (['jpg', 'jpeg', 'png', 'gif', 'svg', 'webp'].includes(ext) || fileUrl.startsWith('data:image')) {
+        contentDiv.innerHTML = `<img src="${fileUrl}" style="max-width: 100%; max-height: 70vh; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">`;
+    } else if (ext === 'pdf') {
+        contentDiv.innerHTML = `<iframe src="${fileUrl}" style="width: 100%; height: 70vh; border: none; border-radius: 8px; background: #fff;"></iframe>`;
+    } else {
+        try {
+            const response = await fetch(fileUrl);
+            const text = await response.text();
+            contentDiv.innerHTML = `
+                <pre style="text-align: left; background: #05050a; padding: 15px; border-radius: 8px; overflow-x: auto; max-height: 70vh; border: 1px solid rgba(255,255,255,0.1); color: #ccc; font-family: 'Fira Code', monospace; font-size: 0.85rem;"><code>${text.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>
+            `;
+        } catch (err) {
+            contentDiv.innerHTML = `<p style="color: #ff5f56;"><i class="fa-solid fa-triangle-exclamation"></i> Preview not available. Please use download button.</p>`;
+        }
+    }
+}
+
+function closeFilePreview() {
+    const modal = document.getElementById('filePreviewModal');
+    if (modal) modal.style.display = 'none';
+    const contentDiv = document.getElementById('filePreviewContent');
+    if (contentDiv) contentDiv.innerHTML = '';
+}
+
+
+================================================
+FILE: style.css
+================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap');
+
+/* Smooth scrolling offset for fixed navbar height */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+#metrics {
+    padding-top: 90px;
+    margin-top: 80px;
+}
+
+:root {
+    --primary-color: #00f2fe;
+    --secondary-color: #4facfe;
+    --bg-dark: #0a0a0a;
+    --bg-card: rgba(25, 25, 35, 0.75);
+    --text-light: #e0e0e0;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.logo { 
+    color: var(--white); 
+    font-size: 1.8rem; 
+    font-weight: 800; 
+    letter-spacing: 0.5px;
+}
+.logo span { color: var(--primary-color); }
+
+.nav-links { display: flex; list-style: none; flex-wrap: wrap; }
+.nav-links li { margin: 0 12px; }
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: var(--primary-color);
+    transition: 0.3s;
+}
+.nav-links a:hover::after,
+.nav-links a.active-link::after { width: 100%; }
+.nav-links a:hover,
+.nav-links a.active-link { color: var(--primary-color); }
+
+/* Hero Section */
+#hero {
+    min-height: 100vh;
+    padding: 120px 20px 60px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: contrast(1.3) brightness(1.1) saturate(1.2);
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.7), rgba(10,10,10,0.95));
+    z-index: 1;
+}
+
+.hero-content { position: relative; z-index: 2; max-width: 850px; width: 100%; }
+
+.greeting { font-size: 1.5rem; color: var(--primary-color); letter-spacing: 2px; margin-bottom: 5px; font-weight: 600; }
+
+.hero-content h1 { font-size: 3.8rem; color: var(--white); margin-bottom: 5px; text-shadow: 0 0 15px rgba(0, 242, 254, 0.3); font-weight: 800; }
+.hero-content h2 { font-size: 2rem; color: var(--text-light); margin-bottom: 15px; min-height: 2.8rem; line-height: 1.4; display: flex; align-items: center; justify-content: center; }
+
+.typed-text { color: var(--primary-color); font-weight: 800; display: inline-block; min-width: 1px; }
+.cursor { display: none !important; }
+
+.hero-desc { font-size: 1.15rem; margin-bottom: 25px; color: #b0b0b0; }
+
+/* DevOps Terminal Window */
+.terminal-container {
+    background: #11111b;
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    border-radius: 10px;
+    margin: 0 auto 30px;
+    max-width: 650px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+.terminal-header {
+    background: #1a1a28;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+}
+.terminal-header:hover {
+    background: #222235;
+}
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+.terminal-title { color: #888; font-size: 0.85rem; font-family: 'Fira Code', monospace; margin-left: 10px; }
+.terminal-body {
+    padding: 15px 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+.terminal-body .prompt { color: var(--primary-color); font-weight: bold; }
+.terminal-output { color: #aaa; margin-top: 5px; }
+.terminal-output .success { color: #27c93f; font-weight: bold; }
+
+/* Buttons */
+.resume-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: rgba(0, 242, 254, 0.05);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    backdrop-filter: blur(5px);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: #000;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.5);
+}
+
+/* Impact Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 10;
+}
+.metric-card {
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 3px solid var(--primary-color);
+}
+.metric-card h3 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    display: inline-block;
+    font-weight: 800;
+}
+.metric-unit { font-size: 1.8rem; color: var(--primary-color); font-weight: 800; }
+.metric-card p { font-size: 0.95rem; color: #ccc; margin-top: 5px; }
+
+/* Common Layout */
+.container { max-width: 1200px; margin: 0 auto; padding: 90px 20px; }
+.bg-dark { background-color: #0d0d12; }
+.text-center { text-align: center; }
+
+.section-title { text-align: center; font-size: 2.8rem; color: var(--white); margin-bottom: 50px; font-weight: 800; }
+.section-title span { color: var(--primary-color); }
+
+/* Glassmorphism Cards */
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 242, 254, 0.5);
+    box-shadow: 0 12px 40px rgba(0, 242, 254, 0.15);
+}
+
+.about-text { font-size: 1.15rem; text-align: center; max-width: 920px; margin: 0 auto; line-height: 1.8; color: #ccc; }
+.highlight-text { color: var(--primary-color); margin: 8px 0 18px; font-weight: 600; }
+.card ul li { margin-bottom: 12px; margin-left: 20px; color: #d0d0d0; }
+
+/* Grids */
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+.badge-prod {
+    font-size: 0.85rem;
+    color: #27c93f;
+    border: 1px solid rgba(39, 201, 63, 0.4);
+    padding: 4px 10px;
+    border-radius: 15px;
+    background: rgba(39, 201, 63, 0.1);
+}
+
+.skill-card {
+    background: #111116;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.skill-card:hover {
+    border-bottom: 3px solid var(--primary-color);
+    transform: translateY(-8px);
+    background: #161620;
+}
+.skill-card i { font-size: 3.2rem; color: var(--primary-color); margin-bottom: 20px; }
+.skill-card h3 { color: var(--white); margin-bottom: 10px; font-size: 1.3rem; }
+.skill-card p { font-size: 0.95rem; color: #aaa; }
+
+/* Tech Stack Pills */
+.tech-stack { margin: 12px 0; }
+.tech-stack span {
+    display: inline-block;
+    background: rgba(0, 242, 254, 0.1);
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    margin: 0 4px 8px 0;
+    border: 1px solid rgba(0, 242, 254, 0.25);
+    font-weight: 600;
+}
+
+/* Links */
+.demo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+.demo-link:hover {
+    color: var(--white);
+    transform: translateX(3px);
+}
+
+/* Contact */
+.contact-info { text-align: center; font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+.contact-info p { margin-bottom: 15px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.social-links { margin-top: 25px; }
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background: #181822;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    margin: 0 8px;
+    font-size: 1.4rem;
+    transition: 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.social-links a:hover {
+    background: var(--primary-color);
+    color: #000;
+    transform: translateY(-4px) rotate(360deg);
+}
+
+footer { text-align: center; background: #050505; color: #777; padding: 25px 0; font-size: 0.95rem; }
+
+/* Secret DevOps Terminal Console Overlay */
+.console-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 10, 0.88);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2500;
+}
+
+.console-card {
+    background: #0d0e15;
+    border: 1px solid rgba(0, 242, 254, 0.4);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 680px;
+    box-shadow: 0 15px 50px rgba(0, 242, 254, 0.2);
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+}
+
+.console-header {
+    background: #151622;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+}
+
+.console-header-title {
+    color: #888;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.console-close {
+    position: absolute;
+    right: 15px;
+    color: #aaa;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.console-close:hover { color: #ff5f56; }
+
+.console-body {
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+.console-log {
+    margin-bottom: 12px;
+    color: #ccc;
+    line-height: 1.5;
+}
+.console-log.warning { color: #ffbd2e; }
+.console-log.error { color: #ff5f56; margin-top: 10px; }
+.console-log.success { color: #27c93f; }
+
+.console-input-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.console-input-row input {
+    background: #05050a;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    outline: none;
+    width: 120px;
+    text-align: center;
+}
+
+.console-btn {
+    background: var(--primary-color);
+    color: #000;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.console-btn:hover { opacity: 0.85; }
+
+.file-console-list {
+    margin-top: 15px;
+    background: #06070a;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.file-item:last-child { border-bottom: none; }
+
+.file-item-name {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.88rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.file-item-name:hover { text-decoration: underline; }
+
+.console-footer-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.console-btn-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.console-btn-link:hover { text-decoration: underline; }
+
+/* Scroll to Top Button */
+.scroll-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-color);
+    color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+
+.scroll-up.show { opacity: 1; pointer-events: auto; }
+.scroll-up:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.8);
+    background: var(--white);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .menu-toggle { display: block; }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background: rgba(13, 13, 18, 0.98);
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-links.active { left: 0; }
+    .nav-links li { margin: 12px 0; }
+
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content h2 { font-size: 1.35rem; min-height: 3.8rem; margin-bottom: 20px; }
+    .hero-desc { font-size: 1rem; }
+
+    .terminal-container { max-width: 100%; font-size: 0.8rem; }
+
+    .resume-buttons { flex-direction: column; align-items: center; }
+    .btn { width: 100%; max-width: 280px; justify-content: center; }
+
+    .container { padding: 60px 15px; }
+    .section-title { font-size: 2.2rem; }
+
+    .glass-card { padding: 25px 20px; }
+    .contact-info p { word-break: break-all; flex-wrap: wrap; font-size: 1rem; }
+}
