@@ -1,0 +1,19 @@
+ok, give me command based file relacement like
+
+cat << 'EOF' > fix.sh
+#!/usr/bin/env bash
+set -euo pipefail
+
+python3 - << 'PY_EOF'
+with open("filename
+
+print("done.")
+PY_EOF
+
+git add file_names
+if ! git diff --cached --quiet; then
+  git commit -m "fixed"
+fi
+git push origin main5
+EOF
+chmod +x fix.sh && ./fix.sh && rm -f fix.sh
