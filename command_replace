@@ -17,3 +17,28 @@ fi
 git push origin main5
 EOF
 chmod +x fix.sh && ./fix.sh && rm -f fix.sh
+
+
+
+example:
+
+cat << 'EOF' > update_session.py
+with open("script.js", "r", encoding="utf-8") as f:
+    content = f.read()
+
+content = content.replace("localStorage.getItem('github_vault_token')", "sessionStorage.getItem('github_vault_token')")
+content = content.replace("localStorage.setItem('github_vault_token',", "sessionStorage.setItem('github_vault_token',")
+
+with open("script.js", "w", encoding="utf-8") as f:
+    f.write(content)
+
+print("Successfully migrated github_vault_token to sessionStorage.")
+EOF
+
+python3 update_session.py
+rm -f update_session.py
+
+git checkout main5 || git checkout -b main5
+git add script.js
+git commit -m "security: switch GitHub PAT storage from localStorage to sessionStorage" || true
+git push origin main5 --force
