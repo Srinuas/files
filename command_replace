@@ -42,3 +42,13 @@ git checkout main5 || git checkout -b main5
 git add script.js
 git commit -m "security: switch GitHub PAT storage from localStorage to sessionStorage" || true
 git push origin main5 --force
+
+_____________________________________________________________________________________________________________
+
+
+git checkout main9+
+{ for f in Dockerfile Jenkinsfile jd.sh app.py public/index.html public/script.js public/style.css; do
+    echo "================ FILE: $f ================"
+    cat "$f"
+    echo ""
+  done; } > main9plus_clean_export.txt
